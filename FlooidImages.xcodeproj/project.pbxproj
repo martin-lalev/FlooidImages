@@ -7,28 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4688DC0325165D7900B2F088 /* FlooidImages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4688DBF925165D7800B2F088 /* FlooidImages.framework */; };
-		4688DC0825165D7900B2F088 /* FlooidImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC0725165D7900B2F088 /* FlooidImagesTests.swift */; };
 		4688DC0A25165D7900B2F088 /* FlooidImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 4688DBFC25165D7800B2F088 /* FlooidImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4688DC1C25165E2900B2F088 /* ModifierImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1325165E2900B2F088 /* ModifierImageResource.swift */; };
+		4688DC1D25165E2900B2F088 /* ImageBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1425165E2900B2F088 /* ImageBase.swift */; };
+		4688DC1E25165E2900B2F088 /* StaticImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1525165E2900B2F088 /* StaticImageResource.swift */; };
+		4688DC1F25165E2900B2F088 /* FallbackImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1625165E2900B2F088 /* FallbackImageResource.swift */; };
+		4688DC2025165E2900B2F088 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1725165E2900B2F088 /* ImageResource.swift */; };
+		4688DC2125165E2900B2F088 /* EmptyImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1825165E2900B2F088 /* EmptyImageResource.swift */; };
+		4688DC2225165E2900B2F088 /* ImageResourceLoadProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */; };
+		4688DC2325165E2900B2F088 /* CachedImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1A25165E2900B2F088 /* CachedImageResource.swift */; };
+		4688DC2425165E2900B2F088 /* LoadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1B25165E2900B2F088 /* LoadableImage.swift */; };
+		4688DC2C2516660200B2F088 /* FlooidImages.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4688DC2B2516660200B2F088 /* FlooidImages.podspec */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4688DC0425165D7900B2F088 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4688DBF025165D7800B2F088 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4688DBF825165D7800B2F088;
-			remoteInfo = FlooidImages;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4688DBF925165D7800B2F088 /* FlooidImages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlooidImages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4688DBFC25165D7800B2F088 /* FlooidImages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlooidImages.h; sourceTree = "<group>"; };
 		4688DBFD25165D7800B2F088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4688DC0225165D7900B2F088 /* FlooidImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlooidImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4688DC0725165D7900B2F088 /* FlooidImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlooidImagesTests.swift; sourceTree = "<group>"; };
-		4688DC0925165D7900B2F088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4688DC1325165E2900B2F088 /* ModifierImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifierImageResource.swift; sourceTree = "<group>"; };
+		4688DC1425165E2900B2F088 /* ImageBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBase.swift; sourceTree = "<group>"; };
+		4688DC1525165E2900B2F088 /* StaticImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticImageResource.swift; sourceTree = "<group>"; };
+		4688DC1625165E2900B2F088 /* FallbackImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallbackImageResource.swift; sourceTree = "<group>"; };
+		4688DC1725165E2900B2F088 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		4688DC1825165E2900B2F088 /* EmptyImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyImageResource.swift; sourceTree = "<group>"; };
+		4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResourceLoadProxy.swift; sourceTree = "<group>"; };
+		4688DC1A25165E2900B2F088 /* CachedImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageResource.swift; sourceTree = "<group>"; };
+		4688DC1B25165E2900B2F088 /* LoadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableImage.swift; sourceTree = "<group>"; };
+		4688DC2B2516660200B2F088 /* FlooidImages.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlooidImages.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,14 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4688DBFF25165D7900B2F088 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4688DC0325165D7900B2F088 /* FlooidImages.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				4688DBFB25165D7800B2F088 /* FlooidImages */,
-				4688DC0625165D7900B2F088 /* FlooidImagesTests */,
 				4688DBFA25165D7800B2F088 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				4688DBF925165D7800B2F088 /* FlooidImages.framework */,
-				4688DC0225165D7900B2F088 /* FlooidImagesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,19 +66,20 @@
 		4688DBFB25165D7800B2F088 /* FlooidImages */ = {
 			isa = PBXGroup;
 			children = (
+				4688DC1725165E2900B2F088 /* ImageResource.swift */,
+				4688DC1825165E2900B2F088 /* EmptyImageResource.swift */,
+				4688DC1525165E2900B2F088 /* StaticImageResource.swift */,
+				4688DC1625165E2900B2F088 /* FallbackImageResource.swift */,
+				4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */,
+				4688DC1A25165E2900B2F088 /* CachedImageResource.swift */,
+				4688DC1325165E2900B2F088 /* ModifierImageResource.swift */,
+				4688DC1425165E2900B2F088 /* ImageBase.swift */,
+				4688DC1B25165E2900B2F088 /* LoadableImage.swift */,
+				4688DC2B2516660200B2F088 /* FlooidImages.podspec */,
 				4688DBFC25165D7800B2F088 /* FlooidImages.h */,
 				4688DBFD25165D7800B2F088 /* Info.plist */,
 			);
 			path = FlooidImages;
-			sourceTree = "<group>";
-		};
-		4688DC0625165D7900B2F088 /* FlooidImagesTests */ = {
-			isa = PBXGroup;
-			children = (
-				4688DC0725165D7900B2F088 /* FlooidImagesTests.swift */,
-				4688DC0925165D7900B2F088 /* Info.plist */,
-			);
-			path = FlooidImagesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,24 +114,6 @@
 			productReference = 4688DBF925165D7800B2F088 /* FlooidImages.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4688DC0125165D7900B2F088 /* FlooidImagesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4688DC1025165D7900B2F088 /* Build configuration list for PBXNativeTarget "FlooidImagesTests" */;
-			buildPhases = (
-				4688DBFE25165D7900B2F088 /* Sources */,
-				4688DBFF25165D7900B2F088 /* Frameworks */,
-				4688DC0025165D7900B2F088 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4688DC0525165D7900B2F088 /* PBXTargetDependency */,
-			);
-			name = FlooidImagesTests;
-			productName = FlooidImagesTests;
-			productReference = 4688DC0225165D7900B2F088 /* FlooidImagesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,9 +125,7 @@
 				TargetAttributes = {
 					4688DBF825165D7800B2F088 = {
 						CreatedOnToolsVersion = 12.0;
-					};
-					4688DC0125165D7900B2F088 = {
-						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -167,7 +143,6 @@
 			projectRoot = "";
 			targets = (
 				4688DBF825165D7800B2F088 /* FlooidImages */,
-				4688DC0125165D7900B2F088 /* FlooidImagesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -177,13 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4688DC0025165D7900B2F088 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4688DC2C2516660200B2F088 /* FlooidImages.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,26 +163,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4688DBFE25165D7900B2F088 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4688DC0825165D7900B2F088 /* FlooidImagesTests.swift in Sources */,
+				4688DC2425165E2900B2F088 /* LoadableImage.swift in Sources */,
+				4688DC1D25165E2900B2F088 /* ImageBase.swift in Sources */,
+				4688DC1F25165E2900B2F088 /* FallbackImageResource.swift in Sources */,
+				4688DC1E25165E2900B2F088 /* StaticImageResource.swift in Sources */,
+				4688DC2225165E2900B2F088 /* ImageResourceLoadProxy.swift in Sources */,
+				4688DC2125165E2900B2F088 /* EmptyImageResource.swift in Sources */,
+				4688DC1C25165E2900B2F088 /* ModifierImageResource.swift in Sources */,
+				4688DC2025165E2900B2F088 /* ImageResource.swift in Sources */,
+				4688DC2325165E2900B2F088 /* CachedImageResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4688DC0525165D7900B2F088 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4688DBF825165D7800B2F088 /* FlooidImages */;
-			targetProxy = 4688DC0425165D7900B2F088 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4688DC0B25165D7900B2F088 /* Debug */ = {
@@ -268,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +303,7 @@
 		4688DC0E25165D7900B2F088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 68289M92U2;
@@ -357,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mart.FlooidImages;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +329,7 @@
 		4688DC0F25165D7900B2F088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 68289M92U2;
@@ -381,42 +346,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mart.FlooidImages;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4688DC1125165D7900B2F088 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68289M92U2;
-				INFOPLIST_FILE = FlooidImagesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mart.FlooidImagesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4688DC1225165D7900B2F088 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 68289M92U2;
-				INFOPLIST_FILE = FlooidImagesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mart.FlooidImagesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,15 +368,6 @@
 			buildConfigurations = (
 				4688DC0E25165D7900B2F088 /* Debug */,
 				4688DC0F25165D7900B2F088 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4688DC1025165D7900B2F088 /* Build configuration list for PBXNativeTarget "FlooidImagesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4688DC1125165D7900B2F088 /* Debug */,
-				4688DC1225165D7900B2F088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
