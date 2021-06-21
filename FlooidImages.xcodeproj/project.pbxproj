@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		4688DC0A25165D7900B2F088 /* FlooidImages.h in Headers */ = {isa = PBXBuildFile; fileRef = 4688DBFC25165D7800B2F088 /* FlooidImages.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4688DC1C25165E2900B2F088 /* ModifierImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1325165E2900B2F088 /* ModifierImageResource.swift */; };
-		4688DC1D25165E2900B2F088 /* ImageBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1425165E2900B2F088 /* ImageBase.swift */; };
 		4688DC1E25165E2900B2F088 /* StaticImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1525165E2900B2F088 /* StaticImageResource.swift */; };
 		4688DC1F25165E2900B2F088 /* FallbackImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1625165E2900B2F088 /* FallbackImageResource.swift */; };
 		4688DC2025165E2900B2F088 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1725165E2900B2F088 /* ImageResource.swift */; };
 		4688DC2125165E2900B2F088 /* EmptyImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1825165E2900B2F088 /* EmptyImageResource.swift */; };
 		4688DC2225165E2900B2F088 /* ImageResourceLoadProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */; };
 		4688DC2325165E2900B2F088 /* CachedImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1A25165E2900B2F088 /* CachedImageResource.swift */; };
-		4688DC2425165E2900B2F088 /* LoadableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1B25165E2900B2F088 /* LoadableImage.swift */; };
 		4688DC2C2516660200B2F088 /* FlooidImages.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4688DC2B2516660200B2F088 /* FlooidImages.podspec */; };
 /* End PBXBuildFile section */
 
@@ -25,15 +23,13 @@
 		4688DBFC25165D7800B2F088 /* FlooidImages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlooidImages.h; sourceTree = "<group>"; };
 		4688DBFD25165D7800B2F088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4688DC1325165E2900B2F088 /* ModifierImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifierImageResource.swift; sourceTree = "<group>"; };
-		4688DC1425165E2900B2F088 /* ImageBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBase.swift; sourceTree = "<group>"; };
 		4688DC1525165E2900B2F088 /* StaticImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticImageResource.swift; sourceTree = "<group>"; };
 		4688DC1625165E2900B2F088 /* FallbackImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallbackImageResource.swift; sourceTree = "<group>"; };
 		4688DC1725165E2900B2F088 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		4688DC1825165E2900B2F088 /* EmptyImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyImageResource.swift; sourceTree = "<group>"; };
 		4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResourceLoadProxy.swift; sourceTree = "<group>"; };
 		4688DC1A25165E2900B2F088 /* CachedImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageResource.swift; sourceTree = "<group>"; };
-		4688DC1B25165E2900B2F088 /* LoadableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadableImage.swift; sourceTree = "<group>"; };
-		4688DC2B2516660200B2F088 /* FlooidImages.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlooidImages.podspec; sourceTree = SOURCE_ROOT; };
+		4688DC2B2516660200B2F088 /* FlooidImages.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlooidImages.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +69,6 @@
 				4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */,
 				4688DC1A25165E2900B2F088 /* CachedImageResource.swift */,
 				4688DC1325165E2900B2F088 /* ModifierImageResource.swift */,
-				4688DC1425165E2900B2F088 /* ImageBase.swift */,
-				4688DC1B25165E2900B2F088 /* LoadableImage.swift */,
 				4688DC2B2516660200B2F088 /* FlooidImages.podspec */,
 				4688DBFC25165D7800B2F088 /* FlooidImages.h */,
 				4688DBFD25165D7800B2F088 /* Info.plist */,
@@ -163,8 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4688DC2425165E2900B2F088 /* LoadableImage.swift in Sources */,
-				4688DC1D25165E2900B2F088 /* ImageBase.swift in Sources */,
 				4688DC1F25165E2900B2F088 /* FallbackImageResource.swift in Sources */,
 				4688DC1E25165E2900B2F088 /* StaticImageResource.swift in Sources */,
 				4688DC2225165E2900B2F088 /* ImageResourceLoadProxy.swift in Sources */,
