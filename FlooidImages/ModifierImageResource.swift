@@ -30,7 +30,7 @@ class ModifierImageResource: ImageResource {
     
     func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
         return ImageCancellable().loadImageResource(self.baseImage) { cancellable, image in
-            DispatchQueue(label: "ImageEffects", qos: .background).async {
+            DispatchQueue(label: "ImageEffects", qos: .default).async {
                 let result = self.modifiers.reduce(image) { $1.modify($0) }
                 DispatchQueue.main.async {
                     callback(result)
