@@ -1,10 +1,10 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "FlooidImages",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "FlooidImages",
@@ -15,6 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "FlooidImages",
-            path: "FlooidImages"),
+            path: "FlooidImages",
+            exclude: ["Info.plist"]
+        )
     ]
 )
