@@ -18,9 +18,8 @@ public class StaticImageResource: ImageResource {
         self.image = image
     }
     
-    public func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
-        callback(self.image)
-        return nil
+    public func load() async -> ImageConvertible? {
+        self.image
     }
     
 }

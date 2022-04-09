@@ -9,15 +9,7 @@
 import Foundation
 
 public protocol ImageCacheContainer {
-    
-    @discardableResult
-    func set(_ value: ImageConvertible?, for key: String, completed: @escaping () -> Void) -> ImageLoaderCancellable?
-    
-    @discardableResult
-    func get(for key: String, completed: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable?
-    
-    func has(for key: String) -> Bool
-
+    func fetch(for key: String, retriever: @escaping () async -> ImageConvertible?) async -> ImageConvertible?
 }
 
 class CachedImageResource: ImageResource {
@@ -35,16 +27,10 @@ class CachedImageResource: ImageResource {
     }
     
     
-    func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
-        if self.cacheService.has(for: self.id) {
-            return self.cacheService.get(for: self.id, completed: callback)
-        } else {
-            return ImageCancellable().loadImageResource(self.baseImage) { (cancellable, result) in
-                self.cacheService.set(result, for: self.id) {
-                    callback(result)
-                }
-            }
-        }
+    func load() async -> ImageConvertible? {
+        await self.cacheService.fetch(for: self.id, retriever: {
+            await self.baseImage.load()
+        })
     }
     
 }

@@ -14,8 +14,7 @@ public class EmptyImageResource: ImageResource {
     
     public init() {}
     
-    public func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
-        callback(nil)
+    public func load() async -> ImageConvertible? {
         return nil
     }
     

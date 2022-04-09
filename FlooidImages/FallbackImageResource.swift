@@ -23,15 +23,12 @@ class FallbackImageResource: ImageResource {
     }
     
     
-    func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
-        return ImageCancellable().loadImageResource(self.baseImage) { cancellable, image in
-            if let image = image, !image.isEmpty {
-                callback(image)
-            } else {
-                cancellable.loadImageResource(self.fallbackImage) {
-                    callback($1)
-                }
-            }
+    func load() async -> ImageConvertible? {
+        let image = await self.baseImage.load()
+        if let image = image, !image.isEmpty {
+            return image
+        } else {
+            return await self.fallbackImage.load()
         }
     }
     

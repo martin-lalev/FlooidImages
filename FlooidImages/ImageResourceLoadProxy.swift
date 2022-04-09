@@ -11,9 +11,9 @@ import Foundation
 class ImageResourceLoadProxy: ImageResource {
     
     private let baseImage: ImageResource
-    private let onLoad: (ImageConvertible?, @escaping () -> Void) -> Void
+    private let onLoad: (ImageConvertible?) async -> Void
     
-    init(for baseImageResource: ImageResource, _ onLoad: @escaping (ImageConvertible?, @escaping () -> Void) -> Void) {
+    init(for baseImageResource: ImageResource, _ onLoad: @escaping (ImageConvertible?) async -> Void) {
         self.baseImage = baseImageResource
         self.onLoad = onLoad
     }
@@ -22,24 +22,20 @@ class ImageResourceLoadProxy: ImageResource {
         return self.baseImage.id
     }
     
-    
-    func load(_ callback: @escaping (ImageConvertible?) -> Void) -> ImageLoaderCancellable? {
-        return ImageCancellable().loadImageResource(self.baseImage) { cancellable, image in
-            self.onLoad(image) {
-                callback(image)
-            }
-        }
+    func load() async -> ImageConvertible? {
+        let image = await self.baseImage.load()
+        await self.onLoad(image)
+        return image
     }
     
 }
 extension ImageResource {
-    public func onLoad(_ onLoad: @escaping (ImageConvertible?, @escaping () -> Void) -> Void) -> ImageResource {
+    public func onLoad(_ onLoad: @escaping (ImageConvertible?) async -> Void) -> ImageResource {
         return ImageResourceLoadProxy(for: self, onLoad)
     }
     public func onLoad(_ onLoad: @escaping (ImageConvertible?) -> Void) -> ImageResource {
         return ImageResourceLoadProxy(for: self) {
             onLoad($0)
-            $1()
         }
     }
 }
