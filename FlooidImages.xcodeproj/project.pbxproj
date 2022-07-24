@@ -16,6 +16,7 @@
 		4688DC2225165E2900B2F088 /* ImageResourceLoadProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */; };
 		4688DC2325165E2900B2F088 /* CachedImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4688DC1A25165E2900B2F088 /* CachedImageResource.swift */; };
 		4688DC2C2516660200B2F088 /* FlooidImages.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4688DC2B2516660200B2F088 /* FlooidImages.podspec */; };
+		46D8EDD2288D4312001940BE /* URLImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D8EDD1288D4312001940BE /* URLImageResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResourceLoadProxy.swift; sourceTree = "<group>"; };
 		4688DC1A25165E2900B2F088 /* CachedImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageResource.swift; sourceTree = "<group>"; };
 		4688DC2B2516660200B2F088 /* FlooidImages.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlooidImages.podspec; sourceTree = SOURCE_ROOT; };
+		46D8EDD1288D4312001940BE /* URLImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4688DC1925165E2900B2F088 /* ImageResourceLoadProxy.swift */,
 				4688DC1A25165E2900B2F088 /* CachedImageResource.swift */,
 				4688DC1325165E2900B2F088 /* ModifierImageResource.swift */,
+				46D8EDD1288D4312001940BE /* URLImageResource.swift */,
 				4688DC2B2516660200B2F088 /* FlooidImages.podspec */,
 				4688DBFC25165D7800B2F088 /* FlooidImages.h */,
 				4688DBFD25165D7800B2F088 /* Info.plist */,
@@ -164,6 +167,7 @@
 				4688DC1C25165E2900B2F088 /* ModifierImageResource.swift in Sources */,
 				4688DC2025165E2900B2F088 /* ImageResource.swift in Sources */,
 				4688DC2325165E2900B2F088 /* CachedImageResource.swift in Sources */,
+				46D8EDD2288D4312001940BE /* URLImageResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
