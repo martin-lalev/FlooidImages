@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol ImageCacheContainer {
-    func fetch(for key: String, retriever: @escaping () async -> ImageConvertible?) async -> ImageConvertible?
+    func fetch(for key: String, retriever: @Sendable @escaping () async -> ImageConvertible?) async -> ImageConvertible?
 }
 
 class CachedImageResource: ImageResource {
