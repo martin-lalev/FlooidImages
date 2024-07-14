@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ImageResourceLoadProxy: ImageResource {
+final class ImageResourceLoadProxy: ImageResource {
     
     private let baseImage: ImageResource
-    private let onLoad: (ImageConvertible?) async -> Void
+    private let onLoad: @Sendable (ImageConvertible?) async -> Void
     
-    init(for baseImageResource: ImageResource, _ onLoad: @escaping (ImageConvertible?) async -> Void) {
+    init(for baseImageResource: ImageResource, _ onLoad: @Sendable @escaping (ImageConvertible?) async -> Void) {
         self.baseImage = baseImageResource
         self.onLoad = onLoad
     }
@@ -30,10 +30,10 @@ class ImageResourceLoadProxy: ImageResource {
     
 }
 extension ImageResource {
-    public func onLoad(_ onLoad: @escaping (ImageConvertible?) async -> Void) -> ImageResource {
+    public func onLoad(_ onLoad: @Sendable @escaping (ImageConvertible?) async -> Void) -> ImageResource {
         return ImageResourceLoadProxy(for: self, onLoad)
     }
-    public func onLoad(_ onLoad: @escaping (ImageConvertible?) -> Void) -> ImageResource {
+    public func onLoad(_ onLoad: @Sendable @escaping (ImageConvertible?) -> Void) -> ImageResource {
         return ImageResourceLoadProxy(for: self) {
             onLoad($0)
         }

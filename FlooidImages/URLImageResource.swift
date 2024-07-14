@@ -7,8 +7,7 @@
 
 import Foundation
 
-public class URLImageResource: ImageResource {
-    
+public final class URLImageResource: ImageResource {
     public let id: String
     private let url: URL?
     
@@ -19,22 +18,12 @@ public class URLImageResource: ImageResource {
     
     public func load() async -> ImageConvertible? {
         guard let url = url else { return nil }
-        var cancellable: URLSessionDataTask?
-        let onCancel = { cancellable?.cancel() }
-        return await withTaskCancellationHandler(
-            handler: { onCancel() },
-            operation: {
-                await withCheckedContinuation { (continuation: CheckedContinuation<Data?, Never>) in
-                    
-                    let task = URLSession.shared.dataTask(with: url) { (imageData, _, _) in
-                        guard !Task.isCancelled else { return }
-                        continuation.resume(returning: imageData)
-                    }
-                    task.resume()
-
-                    cancellable = task
-                }
-            }
-        )
+        
+        do {
+            let (imageData, _) = try await URLSession.shared.data(from: url)
+            return imageData
+        } catch {
+            return nil
+        }
     }
 }

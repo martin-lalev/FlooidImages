@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol ImageCacheContainer {
+public protocol ImageCacheContainer: Sendable {
     func fetch(for key: String, retriever: @Sendable @escaping () async -> ImageConvertible?) async -> ImageConvertible?
 }
 
-class CachedImageResource: ImageResource {
+final class CachedImageResource: ImageResource {
     
     private let cacheService: ImageCacheContainer
     private let baseImage: ImageResource

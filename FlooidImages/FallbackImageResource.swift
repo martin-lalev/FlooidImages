@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FallbackImageResource: ImageResource {
+final class FallbackImageResource: ImageResource {
     
     private let baseImage: ImageResource
     private let fallbackImage: ImageResource

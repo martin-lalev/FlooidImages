@@ -8,12 +8,12 @@
 
 import Foundation
 
-public protocol ImageModifier {
+public protocol ImageModifier: Sendable {
     var id: String { get }
     func modify(_ original: ImageConvertible?) -> ImageConvertible?
 }
 
-class ModifierImageResource: ImageResource {
+final class ModifierImageResource: ImageResource {
     
     private let baseImage: ImageResource
     private let modifiers: [ImageModifier]

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class StaticImageResource: ImageResource {
+public final class StaticImageResource: ImageResource {
     
     public let id: String
     private let image: ImageConvertible?

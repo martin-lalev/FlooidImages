@@ -10,7 +10,7 @@ import Foundation
 
 public typealias ImageConvertible = Data
 
-public protocol ImageResource {
+public protocol ImageResource: Sendable {
     var id: String { get }
     func load() async -> ImageConvertible?
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class EmptyImageResource: ImageResource {
+public final class EmptyImageResource: ImageResource {
     
     public let id: String = "<NULL>"
     
